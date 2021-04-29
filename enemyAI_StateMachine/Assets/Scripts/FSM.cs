@@ -39,6 +39,8 @@ public class FSM : MonoBehaviour
         states.Add(StateType.Chase,new ChaseState(this));
         states.Add(StateType.Patrol,new PatrolState(this));
         states.Add(StateType.React,new ReactState(this));
+
+
         TransitionState(StateType.Idle);
         parameter.animator = this.GetComponent<Animator>();
     }

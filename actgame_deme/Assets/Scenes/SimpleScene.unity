@@ -254,6 +254,8 @@ MonoBehaviour:
     beHittedDistance: 2
     moveSpeed: 5
     jumpForce: 11
+  isAttack: 0
+  isHitted: 0
   layer:
     serializedVersion: 2
     m_Bits: 256
@@ -389,6 +391,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1300287761}
+  - {fileID: 439570620}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -488,6 +491,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b28db268332fd0e4da78c13c76973d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &439570619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 439570620}
+  m_Layer: 6
+  m_Name: ArrowPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &439570620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439570619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.962, y: -0.375, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 162971561}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &596822559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,7 +1047,6 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 64
   isDead: 0
-  AttackArea: {fileID: 0}
 --- !u!1 &1300287760
 GameObject:
   m_ObjectHideFlags: 0
